@@ -15,7 +15,7 @@ export const SignupSignin = () => {
     setSignup(0);
   };
 
-  const onSubmit = async (e) => {
+  const HandleSubmit = async (e) => {
     e.preventDefault();
     let username = e.target.username.value;
     let password = e.target.password.value;
@@ -51,7 +51,7 @@ export const SignupSignin = () => {
       <button onClick={() => ShowSignup()}>Sign up</button>
       <button onClick={() => ShowSignin()}>Sign in</button>
       {signup ? (
-        <form onSubmit={(e) => onSubmit(e)}>
+        <form onSubmit={(e) => HandleSubmit(e)}>
           <input type="text" name="username" placeholder="username" />
           <input type="password" name="password" placeholder="password" />
           <input
@@ -62,7 +62,7 @@ export const SignupSignin = () => {
           <button type="submit">submit</button>
         </form>
       ) : (
-        <form onSubmit={(e) => onSubmit(e)}>
+        <form onSubmit={(e) => HandleSubmit(e)}>
           <input type="text" name="username" placeholder="username" />
           <input type="password" name="password" placeholder="password" />
           <button type="submit">submit</button>

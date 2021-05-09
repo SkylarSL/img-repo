@@ -72,3 +72,9 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.search-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

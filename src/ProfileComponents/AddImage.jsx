@@ -15,12 +15,12 @@ export const AddImage = (props) => {
     }
   }, [fileURL]);
 
-  const onChange = async (e) => {
+  const HandleChange = async (e) => {
     const file = e.target.files[0];
     setFileURL(await HandleUploadImage(file));
   };
 
-  const onSubmit = (e) => {
+  const HandleSubmit = (e) => {
     e.preventDefault();
     let title = e.target.title.value;
     HandleAddImage(user, fileURL, title);
@@ -35,9 +35,9 @@ export const AddImage = (props) => {
 
   return (
     <div className="user-sign-form">
-      <h2>upload an image</h2>
-      <form onSubmit={(e) => onSubmit(e)}>
-        <input id="img-input" type="file" onChange={(e) => onChange(e)} />
+      <h2>Upload a meme:</h2>
+      <form onSubmit={(e) => HandleSubmit(e)}>
+        <input id="img-input" type="file" onChange={(e) => HandleChange(e)} />
         <input type="text" name="title" placeholder="add a title" />
         <button id="img-submit" type="submit">
           submit

@@ -58,7 +58,7 @@ function App() {
             <div id="profile-container" className="profile-close">
               <ProfileDetails />
             </div>
-            <h1>welcome to memes</h1>
+            <h1>Welcome to Memepo</h1>
             <div className="images-container">
               <MultiImage />
             </div>

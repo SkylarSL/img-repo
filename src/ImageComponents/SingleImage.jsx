@@ -4,7 +4,7 @@ import { HandleDeleteImage } from "Backend";
 
 export const SingleImage = (props) => {
   const { user } = useContext(ProfileContext);
-  const Delete = (id) => {
+  const HandleDelete = (id) => {
     HandleDeleteImage(user, id);
   };
   return (
@@ -19,7 +19,7 @@ export const SingleImage = (props) => {
         {props.user ? (
           <></>
         ) : (
-          <button onClick={() => Delete(props.id)}>delete</button>
+          <button onClick={() => HandleDelete(props.id)}>delete</button>
         )}
       </div>
     </>

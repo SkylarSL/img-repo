@@ -124,3 +124,16 @@ export const HandleSignin = async (user, password) => {
     return;
   }
 };
+
+export const HandleSearchImage = async (user, title) => {
+  const userRef = db.collection("users").doc(user);
+  try {
+    return await userRef.get().then((snapshot) => {
+      const imgs = snapshot.data().images;
+      return imgs.filter((img) => img.title === title);
+    });
+  } catch (err) {
+    console.log("there seems to be an error searching for an image: ", err);
+    return;
+  }
+};
