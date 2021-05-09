@@ -7,15 +7,21 @@ import { GetUserImages } from "Backend";
 export const ProfileDetails = () => {
   const { user, HandleUser } = useContext(ProfileContext);
   const [userImages, setUserImages] = useState([]);
+  const [addedImage, setAddedImage] = useState(0);
 
   useEffect(() => {
     const func = async () => {
       setUserImages(await GetUserImages(user));
     };
     func();
-  }, [user]);
+    setAddedImage(0);
+  }, [user, addedImage]);
 
-  const handleLogout = () => {
+  const HandleAddedImage = () => {
+    setAddedImage(1);
+  };
+
+  const HandleLogout = () => {
     sessionStorage.setItem("user", "");
     HandleUser("");
   };
@@ -26,9 +32,8 @@ export const ProfileDetails = () => {
         {({ user }) => (
           <>
             <h1>signed in as {user}</h1>
-            <button onClick={() => handleLogout()}>logout</button>
-            <h2>upload an image</h2>
-            <AddImage />
+            <button onClick={() => HandleLogout()}>logout</button>
+            <AddImage HandleAddedImage={HandleAddedImage} />
           </>
         )}
       </ProfileContext.Consumer>

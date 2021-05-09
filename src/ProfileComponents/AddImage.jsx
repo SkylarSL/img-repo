@@ -2,9 +2,10 @@ import React, { useState, useContext, useEffect } from "react";
 import { ProfileContext } from "ContextsFolder";
 import { HandleAddImage, HandleUploadImage } from "Backend";
 
-export const AddImage = () => {
+export const AddImage = (props) => {
   let { user } = useContext(ProfileContext);
   const [fileURL, setFileURL] = useState("");
+  let { HandleAddedImage } = props;
 
   useEffect(() => {
     if (document.getElementById("img-input").value) {
@@ -26,6 +27,7 @@ export const AddImage = () => {
     document.getElementById("added-img-anim").classList.add("play-anim");
     setTimeout(() => {
       document.getElementById("added-img-anim").classList.remove("play-anim");
+      HandleAddedImage();
     }, 1100);
     document.getElementById("img-input").value = "";
     document.getElementById("img-submit").disabled = true;
@@ -33,6 +35,7 @@ export const AddImage = () => {
 
   return (
     <div className="user-sign-form">
+      <h2>upload an image</h2>
       <form onSubmit={(e) => onSubmit(e)}>
         <input id="img-input" type="file" onChange={(e) => onChange(e)} />
         <input type="text" name="title" placeholder="add a title" />

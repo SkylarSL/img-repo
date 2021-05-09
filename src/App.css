@@ -24,7 +24,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: grey;
+  background-color: white;
   position: fixed;
   top: 0;
   overflow-y: scroll;
@@ -44,7 +44,7 @@
 
 .user-sign-form {
   width: 200px;
-  margin: 0;
+  margin: 50px 0 50px 0;
   padding: 0;
 }
 

@@ -63,7 +63,7 @@ export const SignupSignin = () => {
         </form>
       ) : (
         <form onSubmit={(e) => onSubmit(e)}>
-          <input type="text" name="username" placeholder="sign in" />
+          <input type="text" name="username" placeholder="username" />
           <input type="password" name="password" placeholder="password" />
           <button type="submit">submit</button>
         </form>

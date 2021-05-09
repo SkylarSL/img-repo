@@ -12,7 +12,7 @@ export const MultiImage = () => {
     func();
   }, []);
 
-  if (images.length > 0) {
+  if (images && images.length > 0) {
     return (
       <>
         {images.map((image, index) => (
@@ -26,6 +26,8 @@ export const MultiImage = () => {
         ))}
       </>
     );
+  } else if (images && images.length === 0) {
+    return <h1>no images</h1>;
   } else {
     return <h1>loading images...</h1>;
   }
