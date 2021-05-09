@@ -3,10 +3,14 @@ import { ProfileContext } from "ContextsFolder";
 import { HandleDeleteImage } from "Backend";
 
 export const SingleImage = (props) => {
+  let { GetId } = props;
   const { user } = useContext(ProfileContext);
+
   const HandleDelete = (id) => {
     HandleDeleteImage(user, id);
+    GetId(id);
   };
+
   return (
     <>
       <div className="single-img">

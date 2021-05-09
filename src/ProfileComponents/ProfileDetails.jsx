@@ -50,6 +50,10 @@ export const ProfileDetails = () => {
     document.getElementById("search-bar").value = "";
   };
 
+  const HandleDelete = (id) => {
+    setUserImages(userImages.filter((img) => img.id !== id));
+  };
+
   return (
     <>
       <ProfileContext.Consumer>
@@ -77,6 +81,7 @@ export const ProfileDetails = () => {
             id={image.id}
             image={image.image}
             title={image.title}
+            GetId={HandleDelete}
           />
         ))
       ) : (
