@@ -28,7 +28,7 @@ export const AddImage = (props) => {
     setTimeout(() => {
       document.getElementById("added-img-anim").classList.remove("play-anim");
       HandleAddedImage();
-    }, 1100);
+    }, 1250);
     document.getElementById("img-input").value = "";
     document.getElementById("img-submit").disabled = true;
   };

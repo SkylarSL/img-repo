@@ -33,11 +33,11 @@ To close your profile, simply click "close profile" in the **top left** corner.
 
 #### Add a meme
 
-To add your own memes, first access your profile. There will be a section relatively close to the top that says "upload an image". Follow the steps there, select a meme, give it a title, wait a second for the upload, and submit your image.
+To add your own memes, first access your profile. There will be a section relatively close to the top that says "Upload a meme". Follow the steps there, select a meme, give it a title, wait a second for the upload, and submit your meme.
 
 #### Search a meme
 
-To search for a specific meme within your profile, first access your profile. Under "your images below" you can type in a search word that corresponds to the meme's title. Submit to search and hit refresh to bring back your memes.
+To search for a specific meme within your profile, first access your profile. Under "Your memes" you can type in a search word that corresponds to the meme's title. Submit to search and hit refresh to bring back your memes.
 
 #### Delete a meme
 
