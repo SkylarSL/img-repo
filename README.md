@@ -2,7 +2,7 @@
 
 ## Memepo
 
-A simple MVP to upload and share memes (seriously). Complete with load upon refresh so that you don't lose your place when scrolling. Additionally, you can check out your profile, and add your own memes without losing your place.
+A simple MVP to upload and share memes (seriously). Complete with desynchronous updates so that you don't lose your scroll place (ie. if you add/delete you have to refresh the page to see the update on the main page). Additionally, you can check out your profile and add your own memes, or delete them, without losing your place.
 
 ### Access the project
 
@@ -20,13 +20,13 @@ If you are a returning user you will be required to sign in first. To do so, sim
 
 ### Log out (2 ways)
 
-1. To log out of your current session click on "open profile" in the top right corner to open your profile page. Under "signed in as (you)" you can click the "logout" button to instaantly logout.
+1. To log out of your current session, first open your profile. Under "signed in as (you)" you can click the "logout" button to instaantly logout.
 2. Another way is to simply close and reopen the tab that has Memepo open.
    ![alt text](https://github.com/SkylarSL/img-repo/blob/main/readmeimgs/logout.png)
 
 ### Open your profile
 
-To access your own prfile, simply click "open profile" in the **top right** corner.
+To access your own profile, simply click "open profile" in the **top right** corner.
 ![alt text](https://github.com/SkylarSL/img-repo/blob/main/readmeimgs/openprofile.png)
 
 ### Close your profile
@@ -49,4 +49,5 @@ To search for a specific meme within your profile, first access your profile. Un
 #### Delete a meme
 
 To delete your own memes, first access the profile. Then, search for the meme you wish to be deleted and click "delete" on the **bottom left**.
+
 ![alt text](https://github.com/SkylarSL/img-repo/blob/main/readmeimgs/deletememe.png)
