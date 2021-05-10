@@ -26,9 +26,7 @@ export const MultiImage = () => {
         ))}
       </>
     );
-  } else if (images && images.length === 0) {
-    return <h1>no images</h1>;
   } else {
-    return <h1>loading images...</h1>;
+    return <h1>no images</h1>;
   }
 };
