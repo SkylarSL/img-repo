@@ -2,7 +2,7 @@
 
 ## Memepo
 
-A simple MVP to upload and share memes (seriously). Complete with desynchronous updates so that you don't lose your scroll place (ie. if you add/delete you have to refresh the page to see the update on the main page). Additionally, you can check out your profile and add your own memes, or delete them, without losing your place.
+A simple MVP to upload and share memes (seriously). Complete with desynchronous updates so that you don't lose your scroll place (ie. if you add/delete you have to refresh the page to see the update on the main page).
 
 ### Access the project
 
